@@ -78,7 +78,7 @@ def rule_evol():
     for i, row in enumerate(grid, start=0):
         add_row = []
         for j, elt in enumerate(row, start=0):
-            elm = switch_cell(neighbours(i, j).count("*"), grid[i][j])
+            elm = switch_cell(neighbours(i, j).count("*"), elt)
             add_row.append(elm)
         
         updated_grid.append(add_row)
